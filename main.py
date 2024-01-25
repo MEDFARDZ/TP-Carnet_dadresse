@@ -187,48 +187,48 @@ lbl2 = QLabel(fen)
 
 lbl2.setText("Prenom: ")
 
-lbl2.setGeometry(60, 480, 50, 20)
+lbl2.setGeometry(60, 480, 70, 20)
 lbl2.setFont(QFont("Arial", 12))
 
 lbl3 = QLabel(fen)
 
 lbl3.setText("Adresse :")
 
-lbl3.setGeometry(60, 530, 50, 20)
+lbl3.setGeometry(60, 530, 100, 20)
 lbl3.setFont(QFont("Arial", 12))
 
 lbl4 = QLabel(fen)
 
 lbl4.setText("Code Postal :")
 
-lbl4.setGeometry(60, 580, 70, 20)
+lbl4.setGeometry(60, 580, 100, 20)
 lbl4.setFont(QFont("Arial", 12))
 
 lbl5 = QLabel(fen)
 
 lbl5.setText("Ville :")
 
-lbl5.setGeometry(60, 630, 50, 20)
+lbl5.setGeometry(60, 630, 100, 20)
 lbl5.setFont(QFont("Arial", 12))
 
 lbl6 = QLabel(fen)
 
 lbl6.setText("Telephone :")
 
-lbl6.setGeometry(60, 680, 80, 20)
+lbl6.setGeometry(60, 680, 100, 20)
 lbl6.setFont(QFont("Arial", 12))
 
 lbl7 = QLabel(fen)
 
 lbl7.setText("Email :")
 
-lbl7.setGeometry(60, 730, 50, 20)
+lbl7.setGeometry(60, 730, 100, 20)
 lbl7.setFont(QFont("Arial", 12))
 
 # -- Line Edit
 lineEditId = QLineEdit(fen)
 
-lineEditId.setGeometry(150, 380, 350, 35)
+lineEditId.setGeometry(180, 380, 350, 35)
 lineEditId.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditId.setFont(QFont("Arial", 12))
 
@@ -237,39 +237,39 @@ lineEditNom = QLineEdit(fen)
 lineEditNom.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditNom.setFont(QFont("Arial", 12))
 
-lineEditNom.setGeometry(150, 430, 350, 35)
+lineEditNom.setGeometry(180, 430, 350, 35)
 
 lineEditPrenom = QLineEdit(fen)
 
-lineEditPrenom.setGeometry(150, 480, 350, 35)
+lineEditPrenom.setGeometry(180, 480, 350, 35)
 lineEditPrenom.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditPrenom.setFont(QFont("Arial", 12))
 
 lineEditAdresse = QLineEdit(fen)
 
-lineEditAdresse.setGeometry(150, 530, 350, 35)
+lineEditAdresse.setGeometry(180, 530, 350, 35)
 lineEditAdresse.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditCode = QLineEdit(fen)
 lineEditAdresse.setFont(QFont("Arial", 12))
 
-lineEditCode.setGeometry(150, 580, 350, 35)
+lineEditCode.setGeometry(180, 580, 350, 35)
 lineEditCode.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditCode.setFont(QFont("Arial", 12))
 lineEditVille = QLineEdit(fen)
 lineEditVille.setFont(QFont("Arial", 12))
 
-lineEditVille.setGeometry(150, 630, 350, 35)
+lineEditVille.setGeometry(180, 630, 350, 35)
 lineEditVille.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 
 lineEditTelephone = QLineEdit(fen)
 lineEditTelephone.setFont(QFont("Arial", 12))
 
-lineEditTelephone.setGeometry(150, 680, 350, 35)
+lineEditTelephone.setGeometry(180, 680, 350, 35)
 lineEditTelephone.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 lineEditEmail = QLineEdit(fen)
 lineEditEmail.setFont(QFont("Arial", 12))
 
-lineEditEmail.setGeometry(150, 730, 350, 35)
+lineEditEmail.setGeometry(180, 730, 350, 35)
 lineEditEmail.setStyleSheet("background-color: rgb(25, 25, 25); color: white; border-radius: 5px;")
 
 #lineEditIdSearch = QLineEdit(fen)
