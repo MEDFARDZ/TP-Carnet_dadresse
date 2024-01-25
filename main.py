@@ -283,7 +283,7 @@ btn1 = QPushButton(fen)
 btn1.setText("Ajouter")
 
 btn1.setGeometry(650, 430, 120, 40)
-btn1.setStyleSheet("QPushButton { background-color: BLUE; color: white; border-radius: 10px; }")
+btn1.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn1.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
 btn1.clicked.connect(inserer_donnees)
@@ -296,7 +296,7 @@ btn2.setText("Afficher Tout")
 
 btn2.setGeometry(650, 480, 120, 40)
 btn2.setStyleSheet("background-color: BLUE; color: white;")
-btn2.setStyleSheet("QPushButton { background-color: bLUE; color: white; border-radius: 10px; }")
+btn2.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn2.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
 btn2.clicked.connect(AfficherTout)
