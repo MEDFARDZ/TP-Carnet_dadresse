@@ -116,7 +116,7 @@ fen = QWidget()
 btn7 = QPushButton(fen)
 btn7.setText("Rechercher par ID")
 btn7.setGeometry(780, 580, 130, 40)
-btn7.setStyleSheet("background-color: grey; color: white; border-radius: 10px;")
+btn7.setStyleSheet("background-color: BLUE; color: white; border-radius: 10px;")
 btn7.setFont(QFont("Arial", 12))
 
 # ...
@@ -283,7 +283,7 @@ btn1 = QPushButton(fen)
 btn1.setText("Ajouter")
 
 btn1.setGeometry(650, 430, 120, 40)
-btn1.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
+btn1.setStyleSheet("QPushButton { background-color: BLUE; color: white; border-radius: 10px; }")
 btn1.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
 btn1.clicked.connect(inserer_donnees)
@@ -295,8 +295,8 @@ btn2 = QPushButton(fen)
 btn2.setText("Afficher Tout")
 
 btn2.setGeometry(650, 480, 120, 40)
-btn2.setStyleSheet("background-color: grey; color: white;")
-btn2.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
+btn2.setStyleSheet("background-color: BLUE; color: white;")
+btn2.setStyleSheet("QPushButton { background-color: bLUE; color: white; border-radius: 10px; }")
 btn2.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
 btn2.clicked.connect(AfficherTout)
@@ -308,7 +308,7 @@ btn3 = QPushButton(fen)
 btn3.setText("Modifier")
 
 btn3.setGeometry(650, 530, 120, 40)
-btn3.setStyleSheet("background-color: grey; color: white;")
+btn3.setStyleSheet("background-color: BLUE; color: white;")
 btn3.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn3.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
@@ -321,7 +321,7 @@ btn4 = QPushButton(fen)
 btn4.setText("Supprimer")
 
 btn4.setGeometry(650, 580, 120, 40)
-btn4.setStyleSheet("background-color: grey; color: white;")
+btn4.setStyleSheet("background-color: BLUE; color: white;")
 btn4.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn4.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
@@ -336,7 +336,7 @@ btn5 = QPushButton(fen)
 btn5.setText("Annuler")
 
 btn5.setGeometry(650, 630, 120, 40)
-btn5.setStyleSheet("background-color: grey; color: white;")
+btn5.setStyleSheet("background-color: BLUE; color: white;")
 btn5.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn5.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
@@ -348,7 +348,7 @@ btn6 = QPushButton(fen)
 btn6.setText("Imprimer")
 
 btn6.setGeometry(650, 680, 120, 40)
-btn6.setStyleSheet("background-color: grey; color: white;")
+btn6.setStyleSheet("background-color: BLUE; color: white;")
 btn6.setStyleSheet("QPushButton { background-color: grey; color: white; border-radius: 10px; }")
 btn6.setFont(QFont("Arial", 12))  # Remplacez "Arial" par la police que vous souhaitez et 12 par la taille de police désirée
 
