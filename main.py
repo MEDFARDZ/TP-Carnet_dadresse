@@ -1,13 +1,12 @@
 import sys
 import sqlite3
 from PyQt6.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QVBoxLayout, QWidget, QPushButton, QLineEdit, QLabel, QMessageBox, QDialog, QHBoxLayout
-from PyQt6.QtGui import QPixmap  # Add this line to import QPixmap
 from PyQt6.QtCore import Qt
 
 class AddContactDialog(QDialog):
     def __init__(self, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("Ajout de contact ")
+        self.setWindowTitle("Contact Information")
         self.setFixedSize(400, 300)
 
         layout = QVBoxLayout()
@@ -17,9 +16,9 @@ class AddContactDialog(QDialog):
         self.phone_edit = QLineEdit()
         self.email_edit = QLineEdit()
 
-        layout.addWidget(self.create_label_and_input("Nom:", self.name_edit))
-        layout.addWidget(self.create_label_and_input("Prenom:", self.surname_edit))
-        layout.addWidget(self.create_label_and_input("Telephone:", self.phone_edit))
+        layout.addWidget(self.create_label_and_input("Name:", self.name_edit))
+        layout.addWidget(self.create_label_and_input("Surname:", self.surname_edit))
+        layout.addWidget(self.create_label_and_input("Phone:", self.phone_edit))
         layout.addWidget(self.create_label_and_input("Email:", self.email_edit))
 
         buttons_layout = QHBoxLayout()
@@ -64,36 +63,3 @@ class ContactManager(QMainWindow):
                                (name TEXT, surname TEXT, phone TEXT, email TEXT)''')
         self.init_ui()
         self.load_contacts()
-
-    def init_ui(self):
-        self.setWindowTitle("CARNET D'ADRESSES ")
-        self.setGeometry(200, 200, 800, 600)
-
-
-        layout = QVBoxLayout()
-
-        # Add a QLabel to display the logo
-        logo_label = QLabel(self)
-        pixmap = QPixmap("bdeb.jpg")  # Change this to the path of your logo image
-        pixmap = pixmap.scaled(30, 30, Qt.AspectRatioMode.KeepAspectRatio)
-        logo_label.setPixmap(pixmap)
-        logo_label.setAlignment(Qt.AlignmentFlag.AlignLeft)
-
-        # Add the logo QLabel to the layout
-        layout.addWidget(logo_label)
-
-        self.table = QTableWidget()
-        self.table.setColumnCount(4)
-        self.table.setHorizontalHeaderLabels(["Nom", "Prénom", "Téléphone ", "Courriel"])
-        self.table.horizontalHeader().setStretchLastSection(True)
-
-        button_layout = QHBoxLayout()
-        self.add_button = QPushButton("Ajouter")
-        self.add_button.clicked.connect(self.add_contact)
-        button_layout.addWidget(self.add_button)
-
-        self.edit_button = QPushButton("Éditer")
-        self.edit_button.clicked.connect(self.edit_contact)
-        button_layout.addWidget(self.edit_button)
-
-        self.delete_button = QPushButton("Supprimer")
