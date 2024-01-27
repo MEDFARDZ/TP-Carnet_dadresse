@@ -1,31 +1,22 @@
-Carnet d'adresse avec PyQt6 et SQLite
-Ce programme Python utilise la bibliothèque PyQt6 pour créer une interface graphique permettant de gérer un carnet d'adresses stocké dans une base de données SQLite.
+# Carnet d'adresses
 
-Prérequis
-Assurez-vous d'avoir les bibliothèques suivantes installées :
+Ce projet est un carnet d'adresses simple développé en utilisant Python avec l'interface graphique PyQt et une base de données SQLite pour stocker les informations sur les contacts.
 
-PyQt6
-sqlite3
-Vous pouvez les installer en utilisant la commande suivante :
+## Fonctionnalités
 
-bash
-Copy code
-pip install PyQt6
-Fonctionnalités
-Ajouter une personne avec son nom, prénom, adresse, code postal, ville, téléphone et e-mail.
-Afficher toutes les personnes dans un tableau.
-Modifier les informations d'une personne existante.
-Supprimer une personne.
-Annuler les modifications ou ajouts en cours.
-Imprimer toutes les informations dans un fichier CSV.
-Rechercher une personne par son ID.
-Utilisation
-Exécutez le programme.
-Utilisez les boutons pour ajouter, afficher, modifier, supprimer ou imprimer des personnes.
-Utilisez le bouton "Rechercher par ID" pour rechercher une personne spécifique par son identifiant.
-Contributeurs
-[Votre nom ici]
-Licence
-Ce programme est distribué sous la licence MIT - voir le fichier LICENSE pour plus de détails.
+- Ajout, édition et suppression de contacts.
+- Affichage des contacts dans un tableau avec les colonnes Nom, Prénom, Téléphone et Courriel.
+- Réinitialisation de la base de données pour revenir à l'état initial.
 
-N'hésitez pas à contribuer en ouvrant des issues ou des pull requests pour améliorer ce programme !
+## Prérequis
+
+- Python 3.x
+- PyQt6
+- Un interpréteur SQLite (généralement inclus avec Python)
+
+## Installation
+
+1. Clonez le dépôt vers votre machine locale :
+
+```bash
+git clone https://github.com/votre_utilisateur/carnet-dadresses.git
